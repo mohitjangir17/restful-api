@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+section > a {
+  color: darkcyan;
+  text-decoration: none;
+  font-size: 26px;
+}
+.navcontainer {
+  background-color: darkcyan;
+  padding: 1em;
+  margin: 0;
+}
+.navcontainer > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.mailcontainer {
+  display: flex;
+  margin: 1em 2em 0 0;
+}
+.linkcontainer {
+  display: flex;
+  justify-content: space-between;
+}

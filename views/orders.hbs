@@ -1,0 +1,44 @@
+<h1 class="heading">Your Cart</h1>
+<div class="container">{{# each items}}
+  <ul>
+    <li>  
+    <div>
+      <h2>Item: {{this.product}}</h2>
+      <h2>Quantity: {{this.quantity}}</h2>
+      </div>
+      <div>
+      <form action="/orders/{{ this.id}}" method="post">
+      <button type="submit">Delete</button>
+      </form>
+      </div>
+    </li>
+  </ul>
+{{/each}}</div>
+<style>
+  .paracontainer {
+  width: 100%;
+  height: 100%;
+  margin: 10em 0;
+  text-align: center;
+}
+.paracontent {
+  text-align: center;
+}
+
+.container {
+  margin: 1em 3em;
+  display: flex;
+}
+.heading {
+  margin: 3em 0 0 3em;
+}
+
+a {
+  text-decoration: none;
+}
+.navcontainer > ul > li > a {
+  color: white;
+  font-size: 25px;
+}
+
+</style>
